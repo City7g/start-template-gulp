@@ -2,44 +2,54 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
 
+  // display: flex;
   display: none;
   justify-content: center;
   align-items: center;
 
-  background: rgba(9, 9, 15, 0.8);
+  padding: 20px;
+
+  background-color: rgba($black, 0.25);
+  transition: 0.3s all ease;
+  opacity: 0;
+
+  &.show {
+    display: flex;
+  }
 
   &__wrap {
     position: relative;
 
-    padding: 26px;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
     margin: 0 auto;
 
-    background: #1a1a26;
+    background: $white;
     border-radius: 4px;
   }
 
   &__close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10px;
+    right: -10px;
     transform: translate(50%, -50%);
     width: 30px;
     height: 30px;
 
-    background: #13131b;
-    border-radius: 4px;
-
     cursor: pointer;
+    border-radius: 2px;
 
     &::after,
     &::before {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) rotate(-32deg);
+      transform: translate(-50%, -50%) rotate(-45deg);
       width: 2px;
       height: 15px;
 
@@ -48,7 +58,12 @@
     }
 
     &::before {
-      transform: translate(-50%, -50%) rotate(32deg);
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:focus,
+    &:active {
+      outline: 2px solid $black;
     }
   }
 }

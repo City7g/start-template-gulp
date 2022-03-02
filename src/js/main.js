@@ -1,4 +1,5 @@
 import development from './development.js'
+import { showPopup, closePopup } from './popup.js'
 
 development()
 
@@ -21,5 +22,19 @@ window.addEventListener('click', e => {
   if(!document.querySelector('.header').contains(e.target)) {
     document.querySelector('.header-hamb').classList.remove('active')
     document.querySelector('.header-nav').classList.remove('show')
+  }
+})
+
+// Popup
+document.querySelectorAll('form').forEach(item => {
+  item.addEventListener('submit', e => {
+    e.preventDefault()
+    showPopup('.popup')
+  })
+})
+
+window.addEventListener('click', e => {
+  if(e.target.classList.contains('popup') || e.target.classList.contains('popup__close')) {
+    document.querySelectorAll('.popup').forEach(item => closePopup(item))
   }
 })
