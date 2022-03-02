@@ -1,0 +1,45 @@
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 19px;
+
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #3b3b48;
+  background-color: #161621;
+  border-radius: 4px;
+
+  &.input--warning {
+    padding-left: 41px;
+
+    background-image: url(img/warning-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 15px;
+    background-position: 14px center;
+  }
+}
+
+.main-input {
+  position: relative;
+
+  display: block;
+
+  & span {
+    position: absolute;
+    left: 8px;
+    top: -1px;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #3b3b48;
+  }
+
+  &--black input {
+    background-color: #0e0e16;
+  }
+}

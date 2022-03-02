@@ -1,0 +1,31 @@
+.blue-btn {
+  width: 140px;
+  padding: 13px 12px 14px;
+
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  
+  color: $white;
+  background-color: $primary;
+  border-radius: $radius;
+  white-space: nowrap;
+}
+
+.gray-btn {
+  width: 140px;
+  padding: 13px 12px 14px;
+
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  
+  color: $white;
+  background-color: $gray;
+  border-radius: $radius;
+  white-space: nowrap;
+}

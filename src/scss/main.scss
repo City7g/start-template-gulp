@@ -1,0 +1,16 @@
+@import './base/_variables.scss';
+@import './base/_mixins.scss';
+@import './base/_fonts.scss';
+@import './base/_main.scss';
+@import './base/_grid.scss';
+@import './base/_container.scss';
+@import './base/_button.scss';
+@import './base/_input.scss';
+@import './base/_select.scss';
+@import './base/_popup.scss';
+
+@import './components/_header.scss';
+
+body {
+  min-height: 120vh;
+}
