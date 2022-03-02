@@ -1,5 +1,5 @@
 {
-  "name": "zorgplay",
+  "name": "start-template",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "type": "module",
