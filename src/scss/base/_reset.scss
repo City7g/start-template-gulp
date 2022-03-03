@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+select {
+  border: none;
+}
+
+input {
+  font-family: inherit;
+  border: none;
+  border-radius: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg > path {
+  transition: 0.3s fill ease;
+}
+
+ul {
+  list-style: none;
+}
+
+iframe {
+  width: 100%;
+}

@@ -11,16 +11,16 @@
   content: "";
   pointer-events: none;
 
-  --grid-color: rgb(255 0 0 / 0.2);
-  --grid-sides: 16px;
-  --grid-gutter: 16px;
+  --grid-color: rgb(255 0 0 / 0.1);
+  --grid-sides: 15px;
+  --grid-gutter: 30px;
   --grid-columns: 12;
   --grid-max-width: 1320px;
   --grid-column-width: calc(
     (100% - var(--grid-gutter) * var(--grid-columns)) / var(--grid-columns)
   );
 
-  border: solid red;
+  border: solid rgba(#007EFF, 0.2);
   border-width: 0 max(calc((100vw - var(--grid-max-width)) / 2), calc(var(--grid-sides) - var(--grid-gutter) / 2));
 
   background-image: repeating-linear-gradient(
@@ -36,39 +36,33 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: $laptop) {
   .grid::before {
-    --grid-sides: 32px;
     --grid-columns: 12;
     --grid-max-width: 1140px;
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $tablet) {
   .grid::before {
-    --grid-sides: 24px;
     --grid-columns: 8;
     --grid-max-width: 960px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: $tablet-sm) {
   .grid::before {
-    --grid-sides: 16px;
-    --grid-columns: 8;
     --grid-max-width: 720px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-big) {
   .grid::before {
-    --grid-sides: 16px;
-    --grid-columns: 8;
     --grid-max-width: 540px;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: $mobile) {
   .grid::before {
     --grid-columns: 4;
   }

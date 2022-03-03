@@ -1,50 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  scrollbar-color: $black $white;
+  scrollbar-width: thin;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
   background-color: $white;
   color: $black;
 
   font-family: 'Roboto', sans-serif;
+
+  min-height: 120vh;
 }
 
-a {
-  display: inline-block;
+.main-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px;
 
-  color: inherit;
-  text-decoration: none;
-}
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
 
-button {
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-select {
-  border: none;
-}
-
-input {
-  border: none;
-  border-radius: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-svg > path {
-  transition: 0.3s fill ease;
-}
-
-ul {
-  list-style: none;
-}
-
-iframe {
-  width: 100%;
+  & > *:not(input) {
+    grid-column: 1 / -1;
+  }
 }

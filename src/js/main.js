@@ -3,14 +3,14 @@ import { showPopup, closePopup } from './popup.js'
 
 development()
 
+// Header Scrolled
 window.addEventListener('scroll', () => {
   if(window.pageYOffset > 10) {
-    document.querySelector('header').classList.add('header--shadow')
+    document.querySelector('header').classList.add('header--scrolled')
   } else {
-    document.querySelector('header').classList.remove('header--shadow')
+    document.querySelector('header').classList.remove('header--scrolled')
   }
 })
-
 
 // Header Hamburger
 document.querySelector('.header-hamb').addEventListener('click', () => {

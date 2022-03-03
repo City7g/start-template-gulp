@@ -3,8 +3,10 @@ const development = () => {
   const deviceWidth = document.createElement('div')
   deviceWidth.style.position = 'fixed'
   deviceWidth.style.zIndex = '100000'
-  deviceWidth.style.left = '20px'
+  deviceWidth.style.right = '20px'
   deviceWidth.style.bottom = '20px'
+  deviceWidth.style.background = 'white'
+  deviceWidth.style.padding = '2px'
   deviceWidth.textContent = window.innerWidth
 
   document.querySelector('body').append(deviceWidth)
@@ -18,7 +20,7 @@ const development = () => {
   gridItemNav.setAttribute('href', '#grid')
   gridItemNav.classList.add('header-nav__link')
   gridItemNav.textContent = 'Grid'
-  document.querySelector('.header-nav__link:last-child').after(gridItemNav)
+  document.querySelector('.header .header-nav__link:last-child').after(gridItemNav)
 
   gridItemNav.addEventListener('click', e => {
     e.preventDefault()
