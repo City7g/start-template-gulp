@@ -1,5 +1,5 @@
 html {
-  scrollbar-color: $black $white;
+  scrollbar-color: black white;
   scrollbar-width: thin;
 }
 
@@ -14,6 +14,11 @@ body {
 
   min-height: 120vh;
 }
+
+
+::-webkit-scrollbar-track {border-radius: 4px; background: red;}
+::-webkit-scrollbar {width: 6px; background: white;}
+::-webkit-scrollbar-thumb {border-radius: 4px;background: black;}
 
 .main-form {
   display: grid;

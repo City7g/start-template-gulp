@@ -1,5 +1,9 @@
 /* Grid */
 
+body {
+  --screen-width: 100vw;
+}
+
 .grid::before {
   position: fixed;
   top: 0;
@@ -21,7 +25,7 @@
   );
 
   border: solid rgba(#007EFF, 0.2);
-  border-width: 0 max(calc((100vw - var(--grid-max-width)) / 2), calc(var(--grid-sides) - var(--grid-gutter) / 2));
+  border-width: 0 max(calc((var(--screen-width) - var(--grid-max-width)) / 2), calc(var(--grid-sides) - var(--grid-gutter) / 2));
 
   background-image: repeating-linear-gradient(
     to right,
