@@ -1,29 +1,28 @@
 const showPopup = (popupName) => {
-  const widthScroll = window.innerWidth - document.body.scrollWidth
-  document.body.style.overflow = 'hidden'
+  const widthScroll = window.innerWidth - document.body.scrollWidth;
 
   if (widthScroll > 0) {
-    document.body.style.marginRight = widthScroll + 'px'
+    document.querySelector('body').classList.add("no-scroll");
   }
 
-  document.querySelector(popupName).classList.add('show')
+  document.querySelector(popupName).classList.add("show");
   setTimeout(() => {
-    document.querySelector(popupName).style.opacity = 1
+    document.querySelector(popupName).style.opacity = 1;
   }, 10);
-}
+};
 
 const closePopup = (popupName, isFirstPopup = true) => {
-  popupName.style.opacity = 0
+  popupName.style.opacity = 0;
+
+  // document.body.style.overflow = isFirstPopup ? "" : "hidden";
+
+  if (isFirstPopup) {
+    document.querySelector('body').classList.remove("no-scroll");
+  }
 
   setTimeout(() => {
-    popupName.classList.remove('show')
-
-    document.body.style.overflow = isFirstPopup ? '' : 'hidden'
-
-    if (isFirstPopup) {
-      document.body.style.marginRight = ''
-    }
+    popupName.classList.remove("show");
   }, 300);
-}
+};
 
-export { showPopup, closePopup }
+export { showPopup, closePopup };

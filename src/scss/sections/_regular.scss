@@ -1,0 +1,17 @@
+.regular-section {
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $tablet-sm) {
+      margin-bottom: 25px;
+    }
+  }
+  
+  &__text {
+    margin-bottom: 60px;
+
+    @media (max-width: $tablet-sm) {
+      margin-bottom: 20px;
+    }
+  }
+}

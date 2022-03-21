@@ -1,5 +1,5 @@
 html {
-  scrollbar-color: black white;
+  scrollbar-color: #121739 white;
   scrollbar-width: thin;
 }
 
@@ -10,15 +10,21 @@ body {
   background-color: $white;
   color: $black;
 
-  font-family: 'Roboto', sans-serif;
-
-  min-height: 120vh;
+  font-family: "Poppins", sans-serif;
 }
 
-
-::-webkit-scrollbar-track {border-radius: 4px; background: red;}
-::-webkit-scrollbar {width: 6px; background: white;}
-::-webkit-scrollbar-thumb {border-radius: 4px;background: black;}
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: white;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: black;
+}
 
 .main-form {
   display: grid;

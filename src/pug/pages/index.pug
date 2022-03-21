@@ -1,13 +1,26 @@
 extends ../layout/main
 
 block content
-  section
-    .container
-      h1.title-h1 Hello
-      p.main-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quia, ratione inventore dignissimos labore quod corporis laboriosam esse quos dolorem molestiae ut eligendi et! Molestias quo porro blanditiis a aliquam?
+  include ../sections/first
+  include ../sections/regular/welcome
+  include ../sections/services
+  include ../sections/category
+  include ../sections/regular/diagnostic
+  include ../sections/separator/requst
+  include ../sections/separator/learn-more
+  include ../sections/team
+  include ../sections/download
+  include ../sections/regular/access
+  include ../sections/map
+  include ../sections/separator/last
   
-  section(style="background: #eee;")
-    .container
-      include ../components/main-form
+  //- section
+  //-   .container
+  //-     h1.title-h1 Hello
+  //-     p.text-main Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quia, ratione inventore dignissimos labore quod corporis laboriosam esse quos dolorem molestiae ut eligendi et! Molestias quo porro blanditiis a aliquam?
+  
+  //- section(style="background: #eee;")
+  //-   .container
+  //-     include ../components/main-form
   
   include ../popups/thank

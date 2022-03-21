@@ -1,0 +1,46 @@
+.first-section {
+  position: relative;
+  
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: linear-gradient(90deg, #121739, transparent),
+    url("img/first-img.jpg");
+  background-size: 70% 100%, cover;
+  background-repeat: no-repeat;
+  background-position: left, center;
+
+  &__wave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (max-width: $tablet-sm) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: $mobile) {
+    background-size: 100% 100%, cover;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+
+    @media (max-width: $tablet-sm) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 75px;
+
+    color: $white;
+
+    @media (max-width: $tablet-sm) {
+      margin-bottom: 40px;
+    }
+  }
+}

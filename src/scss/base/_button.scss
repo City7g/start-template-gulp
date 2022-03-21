@@ -1,26 +1,73 @@
-.main-btn {
+.btn-main {
   min-width: 200px;
-  padding: 10px 15px;
+  padding: 30px 60px;
 
   text-align: center;
   color: $white;
-  background-color: $black;
-  border: 2px solid black;
-  border-radius: $radius;
+  background-color: $primary;
+  // border: 2px solid black;
+  border-radius: 50px;
   transition: 0.3s all ease;
 
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 25px;
   font-weight: 700;
+  letter-spacing: 0.1em;
 
-  &:hover {
-    opacity: 0.8;
+  @media (max-width: $tablet-sm) {
+    padding: 15px 30px;
   }
 
-  &:focus {
-    color: $black;
-    background-color: $white;
-    border: 2px solid $black;
-    outline: none;
+  // &:hover {
+  //   opacity: 0.8;
+  // }
+
+  // &:focus {
+  //   color: $black;
+  //   background-color: $white;
+  //   border: 2px solid $black;
+  //   outline: none;
+  // }
+}
+
+.btn-white {
+  min-width: 200px;
+  padding: 30px 60px;
+
+  text-align: center;
+  color: #121739;
+  background-color: $white;
+  // border: 2px solid black;
+  border-radius: 50px;
+  transition: 0.3s all ease;
+
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  @media (max-width: $tablet-sm) {
+    padding: 15px 30px;
+  }
+}
+
+.btn-blue {
+  min-width: 200px;
+  padding: 30px 60px;
+
+  text-align: center;
+  color: $white;
+  background-color: #121739;
+  // border: 2px solid black;
+  border-radius: 50px;
+  transition: 0.3s all ease;
+
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  @media (max-width: $tablet-sm) {
+    padding: 15px 30px;
   }
 }

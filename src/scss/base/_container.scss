@@ -4,6 +4,9 @@ section {
   @media (max-width: $tablet) {
     padding: $section-y-mob 0;
   }
+
+  // Delete
+  // border: 1px solid red;
 }
 
 .container {
@@ -39,5 +42,24 @@ section {
 @media (max-width: $mobile) {
   .container {
     max-width: none;
+  }
+}
+
+.regular-section {
+  & > .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 5fr;
+    gap: 30px 120px;
+  }
+}
+
+.regular-section.regular-section--reverse .container {
+  grid-template-columns: 5fr 4fr;
+}
+
+.regular-section > .container {
+  @media (max-width: $tablet-sm) {
+    grid-template-columns: 1fr !important;
   }
 }

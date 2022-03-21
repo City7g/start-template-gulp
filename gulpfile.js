@@ -11,10 +11,13 @@ browsersync.create()
 const browserSync = () => {
   browsersync.init({
     server: {
-      baseDir: './dist/'
+      baseDir: './dist/',
     },
-    port: 3000,
-    notify: false
+    // host: "127.0.0.1",
+    // online: true,
+    // port: 8080,
+    notify: false,
+    // ui: false
   })
 }
 

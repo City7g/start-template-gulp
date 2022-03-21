@@ -12,5 +12,15 @@
 @import './base/_select.scss';
 @import './base/_popup.scss';
 
+@import './components/_top.scss';
 @import './components/_header.scss';
 @import './components/_footer.scss';
+
+@import './sections/_first.scss';
+@import './sections/_regular.scss';
+@import './sections/_download.scss';
+@import './sections/_separator.scss';
+@import './sections/_category.scss';
+@import './sections/_team.scss';
+@import './sections/_services.scss';
+@import './sections/_map.scss';

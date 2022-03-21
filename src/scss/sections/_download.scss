@@ -1,0 +1,37 @@
+.section-download {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  text-align: center;
+  background: #ffc4a3;
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.download-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 40px 40px;
+
+  margin-top: 60px;
+
+  @media (max-width: $tablet) {
+    margin-top: 35px;
+  }
+
+  @media (max-width: $tablet-sm) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,94 @@
+.section-team {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $tablet-sm) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__link {
+    margin-top: 90px;
+  }
+}
+
+.team-slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+
+  margin-top: 60px;
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    min-width: 400px;
+    padding: 50px 50px 40px;
+
+    @media (max-width: $desktop) {
+      min-width: auto;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      background-image: url(./img/services/wrap-two.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      content: "";
+    }
+
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: $tablet-sm) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 35px;
+  }
+
+  & img {
+    margin-left: auto;
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: #121739;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+
+    @media (max-width: $tablet-sm) {
+      font-size: 20px;
+    }
+  }
+
+  &__profession {
+    color: #121739;
+    font-size: 24px;
+    line-height: 1.5;
+
+    @media (max-width: $tablet-sm) {
+      font-size: 20px;
+    }
+  }
+}

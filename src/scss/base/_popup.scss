@@ -6,6 +6,10 @@
   bottom: 0;
   z-index: 500;
 
+  // overscroll-behavior: contain;
+  // overflow: scroll;
+  // height: 101vh;
+
   // display: flex;
   display: none;
   justify-content: center;
@@ -21,19 +25,28 @@
     display: flex;
   }
 
+  &__content {
+    padding-right: 15px;
+    max-height: 80vh;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+
   &__wrap {
     position: relative;
 
     width: 100%;
     max-width: 600px;
-    padding: 30px;
+    padding: 30px 20px 30px 30px;
     margin: 0 auto;
 
     background: $white;
     border-radius: $radius;
 
+
     @media (max-width: $mobile-big) {
-      padding: 15px 20px;
+      padding: 15px 10px 15px 20px;
     }
   }
 
@@ -84,4 +97,8 @@
       outline: 2px solid $black;
     }
   }
+}
+
+.screen-width {
+  appearance: listmenu;
 }
